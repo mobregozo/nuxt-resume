@@ -51,9 +51,9 @@ const whoAmIStore = () => {
 
       professionalXp: [
         {
-          company: '',
-          from: '',
-          to: '',
+          company: 'Casden',
+          from: '2015-09-27',
+          to: 'now',
           projects: [
             { description: '', job: '', team: '' }
           ]
