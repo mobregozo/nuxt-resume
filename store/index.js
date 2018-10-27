@@ -4,42 +4,43 @@ const whoAmIStore = () => {
   return new Vuex.Store({
     state: () => ({
       identity: {
-        firstName: '',
-        lastName: '',
-        birthDate: ''
+        firstName: 'Renaud',
+        lastName: 'C.',
+        birthDate: '1981-02-20'
       },
 
       contact: {
         address: {
-          street: '',
-          zipCode: '',
-          city: '',
-          country: ''
+          street: '71 avenue Aristide briand',
+          zipCode: '92130',
+          city: 'Montrouge',
+          country: 'France'
         },
 
         email: {
-          personal: '',
-          pro: ''
+          personal: 'personal@provider.com',
+          pro: 'pro@company.org'
         },
 
         phone: {
-          home: '',
-          cellular: '',
+          home: '0123456789',
+          cellular: '0606060606',
           pro: ''
         }
       },
 
-      description: '',
+      description: 'Who am I?',
 
       schooling: [
-        { school: '', from: '', to: '', diploma: '' },
-        { school: '', from: '', to: '', diploma: '' }
+        { school: 'School I studied at', from: '2003', to: '2006', diploma: 'Ingeneer' },
+        { school: 'Previous school', from: '2001', to: '2003', diploma: '...' }
       ],
 
       skills: {
         languages: [
-          { lang: '', level: '' },
-          { lang: '', level: '' }
+          { lang: 'French', level: 'native' },
+          { lang: 'English', level: 'fluent' },
+          { lang: 'Spanish', level: 'It\'s been a long time...' }
         ],
 
         softwares: [
@@ -60,7 +61,7 @@ const whoAmIStore = () => {
       ],
 
       hobbies: [
-        'hobby 1', 'hobby2'
+        'hobby 1', 'hobby 2'
       ]
     }),
 
