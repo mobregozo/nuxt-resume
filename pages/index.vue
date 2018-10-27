@@ -1,13 +1,18 @@
 <template>
-  <identity />
+  <section>
+    <identity />
+    <description />
+  </section>
 </template>
 
 <script>
   import Identity from '~/components/Identity'
+  import Description from '~/components/Description'
 
   export default {
     components: {
-      Identity
+      Identity,
+      Description
     }
   }
 </script>
