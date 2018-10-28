@@ -5,6 +5,7 @@
     <contact />
     <skills />
     <schooling />
+    <professional-xp />
     <hobbies />
   </section>
 </template>
@@ -15,6 +16,7 @@
   import Contact from '~/components/Contact'
   import Skills from '~/components/Skills'
   import Schooling from '~/components/Schooling'
+  import ProfessionalXp from '~/components/ProfessionalXp'
   import Hobbies from '~/components/Hobbies'
 
   export default {
@@ -24,6 +26,7 @@
       Contact,
       Skills,
       Schooling,
+      ProfessionalXp,
       Hobbies
     }
   }
