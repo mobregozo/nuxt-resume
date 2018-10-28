@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="resume-container">
     <identity />
     <description />
     <contact />

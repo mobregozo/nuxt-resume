@@ -34,6 +34,10 @@ module.exports = {
         })
       }
     }
-  }
+  },
+
+  css: [
+    './assets/less/style.less'
+  ]
 }
 
