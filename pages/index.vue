@@ -5,6 +5,7 @@
     <contact />
     <skills />
     <schooling />
+    <hobbies />
   </section>
 </template>
 
@@ -14,6 +15,7 @@
   import Contact from '~/components/Contact'
   import Skills from '~/components/Skills'
   import Schooling from '~/components/Schooling'
+  import Hobbies from '~/components/Hobbies'
 
   export default {
     components: {
@@ -21,7 +23,8 @@
       Description,
       Contact,
       Skills,
-      Schooling
+      Schooling,
+      Hobbies
     }
   }
 </script>
