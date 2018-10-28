@@ -15,8 +15,8 @@ const whoAmIStore = () => {
 
       contact: {
         address: {
-          street: '71 avenue Aristide briand',
-          zipCode: '92130',
+          street: '71 avenue Aristide Briand',
+          zipCode: '92120',
           city: 'Montrouge',
           country: 'France'
         },
@@ -37,7 +37,7 @@ const whoAmIStore = () => {
 
       schooling: [
         { school: 'School I studied at', from: '2003', to: '2006', diploma: 'Ingeneer' },
-        { school: 'Previous school', from: '2001', to: '2003', diploma: '...' }
+        { school: 'Previous school', from: '2001', to: '2003', diploma: '' }
       ],
 
       skills: {
@@ -73,10 +73,6 @@ const whoAmIStore = () => {
       getIdentity: state => state.identity,
 
       getContact: state => state.contact,
-
-      getEmail: state => state.email,
-
-      getPhone: state => state.phone,
 
       getDescription: state => state.description,
 
