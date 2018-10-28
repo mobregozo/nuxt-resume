@@ -6,7 +6,11 @@ const whoAmIStore = () => {
       identity: {
         firstName: 'Renaud',
         lastName: 'C.',
-        birthDate: '1981-02-20'
+        birthDate: {
+          year: 1981,
+          month: 2,
+          day: 20
+        }
       },
 
       contact: {
