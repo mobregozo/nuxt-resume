@@ -57,9 +57,18 @@ const whoAmIStore = () => {
         {
           company: 'Casden',
           from: '2015-09-27',
-          to: 'now',
+          to: '2018-12-31',
           projects: [
-            { description: '', job: '', team: '' }
+            { description: '...', job: 'dev', team: '1 scrum master, 1 po, 1 ba, 5 devs' }
+          ]
+        },
+
+        {
+          company: 'Ippon',
+          from: '2006-11-01',
+          to: '',
+          projects: [
+            { description: 'blablabla', job: 'dev', team: '' }
           ]
         }
       ],
