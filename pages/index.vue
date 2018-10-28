@@ -3,6 +3,7 @@
     <identity />
     <description />
     <contact />
+    <skills />
   </section>
 </template>
 
@@ -10,12 +11,14 @@
   import Identity from '~/components/Identity'
   import Description from '~/components/Description'
   import Contact from '~/components/Contact'
+  import Skills from '~/components/Skills'
 
   export default {
     components: {
       Identity,
       Description,
-      Contact
+      Contact,
+      Skills
     }
   }
 </script>
