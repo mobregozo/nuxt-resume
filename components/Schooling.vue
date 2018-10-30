@@ -1,5 +1,5 @@
 <template>
-  <section class="schooling-container">
+  <section id="schooling-container">
     <ul>
       <li v-for="school in getSchooling" :key="school">
         <schooling-line :data="school" />

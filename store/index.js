@@ -21,10 +21,10 @@ const whoAmIStore = () => {
           country: 'France'
         },
 
-        email: {
-          personal: 'personal@provider.com',
-          pro: 'pro@company.org'
-        },
+        email: [
+          'personal@provider.com',
+          'pro@company.org'
+        ],
 
         phone: {
           home: '0123456789',

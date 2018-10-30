@@ -1,0 +1,33 @@
+@import "./_vars";
+
+#contact-container {
+  grid-area: ct;
+
+  border-top: solid 2px @yellow;
+  background-color: @grey;
+  color: @yellow;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "phone addr email";
+
+  .contact {
+    &#address {
+      grid-area: addr;
+    }
+
+    &#phone-container {
+      grid-area: phone;
+    }
+
+    &#email-container {
+      grid-area: email;
+    }
+
+    &#phone-container, &#email-container {
+      list-style-type: none;
+    }
+  }
+}

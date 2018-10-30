@@ -1,5 +1,5 @@
 <template>
-  <section class="hobbies-container">
+  <section id="hobbies-container">
     <ul>
       <li v-for="hobby in getHobbies" :key="hobby" v-text="hobby"></li>
     </ul>

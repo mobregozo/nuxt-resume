@@ -1,5 +1,5 @@
 <template>
-  <p v-text="address"></p>
+  <p id="address" class="contact" v-text="address"></p>
 </template>
 
 <script>

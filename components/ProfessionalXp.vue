@@ -1,5 +1,5 @@
 <template>
-  <section class="professional-xp-container">
+  <section id="professional-xp-container">
     <ul>
       <li v-for="xp in getProfessionalXp" :key="xp">
         <professional-xp-line :data="xp" />

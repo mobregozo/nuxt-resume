@@ -1,5 +1,5 @@
 <template>
-  <section class="skills-container">
+  <section id="skills-container">
     <skills-languages v-if="hasLanguages" />
     <skills-softwares v-if="hasSoftwares" />
   </section>

@@ -1,0 +1,23 @@
+@import "./_vars";
+
+#identity-container {
+  grid-area: id;
+
+  background-color: @grey;
+
+  h1 {
+    font-size: 4rem;
+
+    span:first-of-type {
+      color: @white;
+    }
+
+    span:last-of-type {
+      color: @yellow;
+    }
+  }
+
+  > span {
+    display: none;
+  }
+}

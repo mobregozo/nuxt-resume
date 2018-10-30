@@ -1,5 +1,5 @@
 <template>
-  <ul v-if="hasPhone">
+  <ul id="phone-container" class="contact" v-if="hasPhone">
     <li v-if="getContact.phone.home" v-text="getContact.phone.home"></li>
     <li v-if="getContact.phone.cellular" v-text="getContact.phone.cellular"></li>
     <li v-if="getContact.phone.pro" v-text="getContact.phone.pro"></li>

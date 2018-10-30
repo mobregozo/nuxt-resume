@@ -1,7 +1,10 @@
 <template>
-  <section class="identity-container">
-    <div v-text="fullName"></div>
-    <div v-text="birthDate"></div>
+  <section id="identity-container">
+    <h1>
+      <span v-text="getIdentity.firstName"></span>
+      <span v-text="getIdentity.lastName"></span>
+    </h1>
+    <span v-text="birthDate"></span>
   </section>
 </template>
 
@@ -13,10 +16,6 @@
 
     computed: {
       ...mapGetters([ 'getIdentity' ]),
-
-      fullName() {
-        return `${this.getIdentity.firstName} ${this.getIdentity.lastName}`
-      },
 
       // TODO make it a filter
       birthDate() {
