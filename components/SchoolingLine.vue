@@ -1,8 +1,7 @@
 <template>
   <section>
-    <p v-text="data.school"></p>
-    <p v-if="data.diploma" v-text="data.diploma"></p>
-    <p v-text="`From ${data.from} to ${data.to}`"></p> <!-- TODO use filter -->
+    <h3>{{data.school}} - {{data.from}} / {{data.to}}</h3>
+    <p v-if="data.diploma" v-text="`Diplôme: ${data.diploma}`">Diplôme: {{data.diploma}}</p>
   </section>
 </template>
 

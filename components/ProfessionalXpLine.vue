@@ -1,12 +1,14 @@
 <template>
   <section>
-    <p v-text="data.company"></p>
-    <p>
-      <span v-text="`From ${data.from}`"></span> <!-- TODO use filter -->
-      <span v-if="data.to" v-text="`to ${data.to}`"></span>
-      <span v-else="" v-text="`to today`"></span>
-    </p>
-    <ul>
+    <h3>
+      {{data.company}}
+      -
+      <span class="lowercase">
+        {{data.from}} à <span v-if="data.to" v-text="data.to"></span><span v-else="" class="lowercase">aujourd'hui</span>
+      </span>
+    </h3>
+    <h4 v-if="hasProjects" v-text="projectTitle"></h4>
+    <ul v-if="hasProjects">
       <li v-for="project in data.projects" :key="hash(project)">
         <professional-xp-line-project :data="project" />
       </li>
@@ -33,6 +35,16 @@
       data: {
         type: Object,
         required: true
+      }
+    },
+
+    computed: {
+      hasProjects: function() {
+        return Array.isArray(this.data.projects) && this.data.projects.length > 0
+      },
+
+      projectTitle: function() {
+        return this.data.projects.length > 1 ? 'Projets' : 'Projet'
       }
     }
   }
