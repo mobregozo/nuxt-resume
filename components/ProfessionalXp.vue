@@ -1,7 +1,7 @@
 <template>
   <section id="professional-xp-container">
     <ul>
-      <li v-for="xp in getProfessionalXp" :key="xp">
+      <li v-for="xp in getProfessionalXp" :key="hash(xp)">
         <professional-xp-line :data="xp" />
       </li>
     </ul>
@@ -11,6 +11,7 @@
 <script>
   import { mapGetters } from 'vuex'
   import ProfessionalXpLine from './ProfessionalXpLine'
+  import Utils from '~/mixins/Utils'
 
   export default {
     name: 'ProfessionalXp',
@@ -18,6 +19,10 @@
     components: {
       ProfessionalXpLine
     },
+
+    mixins: [
+      Utils
+    ],
 
     computed: {
       ...mapGetters(['getProfessionalXp'])

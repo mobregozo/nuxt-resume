@@ -7,7 +7,7 @@
       <span v-else="" v-text="`to today`"></span>
     </p>
     <ul>
-      <li v-for="project in data.projects" :key="project">
+      <li v-for="project in data.projects" :key="hash(project)">
         <professional-xp-line-project :data="project" />
       </li>
     </ul>
@@ -16,6 +16,7 @@
 
 <script>
   import ProfessionalXpLineProject from './ProfessionalXpLineProject'
+  import Utils from '~/mixins/Utils'
 
   export default {
     name: 'ProfessionalXpLine',
@@ -23,6 +24,10 @@
     components: {
       ProfessionalXpLineProject
     },
+
+    mixins: [
+      Utils
+    ],
 
     props: {
       data: {
