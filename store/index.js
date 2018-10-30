@@ -27,9 +27,8 @@ const whoAmIStore = () => {
         ],
 
         phone: {
-          home: '0123456789',
-          cellular: '0606060606',
-          pro: ''
+          home: '+33123456789',
+          mobile: '+33606060606'
         }
       },
 
