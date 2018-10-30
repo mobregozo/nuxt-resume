@@ -1,7 +1,8 @@
 <template>
-  <section id="hobbies-container">
+  <section id="hobbies-container" class="resume-section">
+    <h2>Intérêts</h2>
     <ul>
-      <li v-for="hobby in getHobbies" :key="hobby" v-text="hash(hobby)"></li>
+      <li v-for="hobby in getHobbies" :key="hash(hobby)" v-text="hobby"></li>
     </ul>
   </section>
 </template>

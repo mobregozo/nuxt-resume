@@ -1,4 +1,5 @@
 @import "./_vars";
+@import "./_common";
 @import "./_identity";
 @import "./_description";
 @import "./_contact";
@@ -7,19 +8,35 @@
 @import "./_professional-xp";
 @import "./_hobbies";
 
-body {
-  background-color: @yellow;
+html {
+  font-size: 10px !important;
 
-  #resume-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "id id"
-      "de de"
-      "ct ct"
-      "sk sc"
-      "sk xp"
-      "ho xp";
+  body {
+    background-color: @yellow;
+
+    #resume-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "id id"
+        "de de"
+        "ct ct"
+        "sk sc"
+        "sk xp"
+        "ho xp";
+
+      font-size: 1.6rem;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .lowercase {
+        text-transform: lowercase !important;
+      }
+    }
   }
 }
