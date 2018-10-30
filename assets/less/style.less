@@ -1,2 +1,25 @@
-.resume-container {
+@import "./_vars";
+@import "./_identity";
+@import "./_description";
+@import "./_contact";
+@import "./_skills";
+@import "./_schooling";
+@import "./_professional-xp";
+@import "./_hobbies";
+
+body {
+  background-color: @yellow;
+
+  #resume-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "id id"
+      "de de"
+      "ct ct"
+      "sk sc"
+      "sk xp"
+      "ho xp";
+  }
 }

@@ -1,5 +1,5 @@
 <template>
-  <ul v-if="hasEmail">
+  <ul id="email-container" class="contact" v-if="hasEmail">
     <li v-if="getContact.email.personal" v-text="getContact.email.personal"></li>
     <li v-if="getContact.email.pro" v-text="getContact.email.pro"></li>
   </ul>

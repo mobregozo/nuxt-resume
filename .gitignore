@@ -1,6 +1,7 @@
 # intellij
 .idea
 *.iml
+dummy.webpack.config.js
 
 # dependencies
 node_modules

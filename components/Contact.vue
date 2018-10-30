@@ -1,5 +1,5 @@
 <template>
-  <section class="contact-container">
+  <section id="contact-container">
     <contact-address />
     <contact-phone />
     <contact-email />

@@ -1,6 +1,6 @@
 <template>
-  <section class="description-container">
-    <div v-text="getDescription"></div>
+  <section id="description-container">
+    <p v-text="getDescription"></p>
   </section>
 </template>
 
