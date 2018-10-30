@@ -1,5 +1,6 @@
 <template>
-  <section id="schooling-container">
+  <section id="schooling-container" class="resume-section">
+    <h2>Formation</h2>
     <ul>
       <li v-for="school in getSchooling" :key="hash(school)">
         <schooling-line :data="school" />

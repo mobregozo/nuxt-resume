@@ -1,5 +1,6 @@
 <template>
-  <section id="professional-xp-container">
+  <section id="professional-xp-container" class="resume-section">
+    <h2>Expérience professionnelle</h2>
     <ul>
       <li v-for="xp in getProfessionalXp" :key="hash(xp)">
         <professional-xp-line :data="xp" />

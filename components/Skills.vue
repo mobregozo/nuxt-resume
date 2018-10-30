@@ -1,5 +1,6 @@
 <template>
-  <section id="skills-container">
+  <section id="skills-container" class="resume-section">
+    <h2>Compétences</h2>
     <skills-languages v-if="hasLanguages" />
     <skills-softwares v-if="hasSoftwares" />
   </section>

@@ -1,5 +1,6 @@
 <template>
-  <section id="hobbies-container">
+  <section id="hobbies-container" class="resume-section">
+    <h2>Intérêts</h2>
     <ul>
       <li v-for="hobby in getHobbies" :key="hobby" v-text="hash(hobby)"></li>
     </ul>
