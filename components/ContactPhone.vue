@@ -4,9 +4,7 @@
       <contact-line type="phone" :value="getContact.phone.home" />
     </li>
     <li v-if="getContact.phone.mobile">
-      <a :href="`tel:${getContact.phone.mobile}`">
-        <contact-line type="mobile" :value="getContact.phone.mobile" />
-      </a>
+      <contact-line type="mobile" :value="getContact.phone.mobile" />
     </li>
   </ul>
 </template>
