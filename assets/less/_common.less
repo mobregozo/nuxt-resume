@@ -6,16 +6,31 @@
 
   margin: 20px;
 
-  border: solid 1px @grey;
-
-  background-color: @white;
-
   color: @grey;
 
-  h2 {
-    background-color: @grey;
+  > * {
+    border-left: solid 1px @grey;
+    border-right: solid 1px @grey;
 
-    color: @white;
-    text-transform: uppercase;
+    background-color: @lightgrey;
+
+    &:first-child {
+      border-top: solid 1px @grey;
+
+      border-top-left-radius: @border-radius;
+      border-top-right-radius: @border-radius;
+
+      background-color: @grey;
+
+      color: @lightgrey;
+      text-transform: uppercase;
+    }
+
+    &:last-child {
+      border-bottom: solid 1px @grey;
+
+      border-bottom-left-radius: @border-radius;
+      border-bottom-right-radius: @border-radius;
+    }
   }
 }

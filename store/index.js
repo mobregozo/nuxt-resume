@@ -5,7 +5,7 @@ const whoAmIStore = () => {
     state: () => ({
       identity: {
         firstName: 'Renaud',
-        lastName: 'C.',
+        lastName: 'Castéran',
         birthDate: {
           year: 1981,
           month: 2,
@@ -32,7 +32,7 @@ const whoAmIStore = () => {
         }
       },
 
-      description: 'Who am I?',
+      description: 'Développeur JEE et front-end',
 
       schooling: [
         { school: 'School I studied at', from: '2003', to: '2006', diploma: 'Ingeneer' },
