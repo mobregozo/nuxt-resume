@@ -1,24 +1,24 @@
 <template>
-  <ul id="email-container" class="contact" v-if="hasEmail">
-    <li v-if="getContact.email.personal" v-text="getContact.email.personal"></li>
-    <li v-if="getContact.email.pro" v-text="getContact.email.pro"></li>
+  <ul id="email-container" class="contact">
+    <li v-for="email in getContact.email" :key="email">
+      <picto picto="at" :label="email" />
+    </li>
   </ul>
 </template>
 
 <script>
   import { mapGetters } from 'vuex'
+  import Picto from './PictoLabel'
 
   export default {
     name: 'ContactEmail',
 
+    components: {
+      Picto
+    },
+
     computed: {
-      ...mapGetters(['getContact']),
-
-      hasEmail() {
-        const email = this.getContact.email
-
-        return email.personal || email.pro
-      }
+      ...mapGetters(['getContact'])
     }
   }
 </script>
